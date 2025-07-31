@@ -7,7 +7,7 @@ You can also control the size of the batches to download, or ALL.
 
 ## How to use
 in order to access yahoo mail, you will need to set up a one-time application password.  this is not your regular user password!
-this can be done by logging into yahoo and going [here](https://login.yahoo.com/account/security)[here].
+this can be done by logging into yahoo and going [here](https://login.yahoo.com/account/security).
 
 when this code is invoked you will be required to enter your yahoo email address and app password:
 
