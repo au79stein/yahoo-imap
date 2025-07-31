@@ -6,6 +6,23 @@ You can also control the size of the batches to download, or ALL.
 
 
 ## How to use
+in order to access yahoo mail, you will need to set up a one-time application password.  this is not your regular user password!
+this can be done by logging into yahoo and going [https://login.yahoo.com/account/security](here).
+
+when this code is invoked you will be required to enter your yahoo email address and app password:
+
+```
+    # Get credentials
+    print("Yahoo Email Retriever")
+    print("Note: You'll need to use an App Password, not your regular Yahoo password")
+    print("Generate one at: https://login.yahoo.com/account/security")
+    print()
+
+    username = input("Enter your Yahoo email address: ")
+    password = getpass.getpass("Enter your App Password: ")
+```
+
+
 ```
 MacBook-Pro:yahoo_emails_20250729_151324 richgoldstein$ cat email_summary.json | jq -r '.emails[] | "\(.id)\t\(.subject)\t\(.attachment_count)\t\(.date)"'
 1	Re: test	0	Fri, 30 Aug 2024 22:22:42 -0400
